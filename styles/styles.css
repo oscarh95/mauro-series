@@ -1,0 +1,46 @@
+body{
+    box-sizing: border-box;
+    min-width: auto;
+    min-height: 100%;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 50px;
+    background-color: #FF6B00;
+    box-shadow: 0 3px 5px #393F4880;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.box{
+    background-color: green;
+    padding: 10px 15px;
+}
+
+#logo-container{
+    height: 57px;
+    width: 57px;
+    
+}
+
+#logo{
+    height: inherit;
+    width: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 8px 16px;
+    max-height: 20px;
+}
