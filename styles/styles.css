@@ -44,3 +44,10 @@ a{
     padding: 8px 16px;
     max-height: 20px;
 }
+
+section{
+    text-align: center;
+    margin: auto;
+    width: 60vw;
+}
+
