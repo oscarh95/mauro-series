@@ -46,8 +46,13 @@ a{
 }
 
 section{
+    box-sizing: border-box;
+    border: 1px solid black;
     text-align: center;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
     width: 60vw;
+    padding: 70px 50px;
 }
 
