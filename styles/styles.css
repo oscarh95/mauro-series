@@ -1,3 +1,8 @@
+html{
+    font-size: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 body{
     box-sizing: border-box;
     min-width: auto;
@@ -9,7 +14,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 18px 50px;
-    background-color: #FF6B00;
+    background-color: #ff7600;
     box-shadow: 0 3px 5px #393F4880;
 }
 
@@ -20,14 +25,9 @@ nav{
     margin-top: 10px;
 }
 
-.box{
-    background-color: green;
-    padding: 10px 15px;
-}
-
 #logo-wrapper{
     height: 57px;
-    width: 57px;
+    width: 150px;
     
 }
 
@@ -41,16 +41,21 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(/assets/handsome.PNG);
+    background-image: url(/assets/mauropowerstance.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 35vw;
+    margin-top: 0;
+}
+
+#intro-wrapper > p, #intro-wrapper > h1  {
+    color: #ff7600;
+    -webkit-text-stroke: 1.2px black;
 }
 
 a{
     text-decoration: none;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding: 8px 16px;
     max-height: 20px;
@@ -80,5 +85,8 @@ section{
     font-weight: bold;
 }
 
-
+.redirect{
+    margin-top: 10px;
+    padding: 5px;
+}
 
