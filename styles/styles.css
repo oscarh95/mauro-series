@@ -41,7 +41,7 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(../assets/mauropowerstance.png);
+    background-image: url("../assets/mauropowerstance.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 35vw;
