@@ -25,7 +25,7 @@ nav{
     padding: 10px 15px;
 }
 
-#logo-container{
+#logo-wrapper{
     height: 57px;
     width: 57px;
     
@@ -34,6 +34,17 @@ nav{
 #logo{
     height: inherit;
     width: inherit;
+}
+
+#intro-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/assets/handsome.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vw;
 }
 
 a{
@@ -52,22 +63,22 @@ section{
     margin: auto;
     margin-top: 20px;
     margin-bottom: 10px;
-    width: 60vw;
     padding: 120px 100px;
     
 }
 
-.title-container{
+.title-wrapper{
     margin-bottom: 10px;
 }
 
-.title-container h1, p{
+.title-wrapper h1, p{
     margin-top: 0;
     margin-bottom: 5px;
 }
 
-.title-container p{
+.title-wrapper p{
     font-weight: bold;
 }
+
 
 
