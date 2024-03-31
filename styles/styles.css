@@ -107,6 +107,6 @@ section{
     height: 25vw;
 }
 
-#voice-actor-wrapper{
+#voice-actor-wrapper p, #voice-actor-wrapper h1{
     color: white;
 }
