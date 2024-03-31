@@ -28,7 +28,6 @@ nav{
 #logo-wrapper{
     height: 57px;
     width: 150px;
-    
 }
 
 #logo{
@@ -92,21 +91,46 @@ section{
     padding: 5px;
 }
 
-#series-wrapper{
-    background-color: #ff7600;
+.section-height{
     height: 25vw;
 }
 
-#mauro-friends-wrapper{
+#series-wrapper{
     background-color: white;
-    height: 25vw;
+}
+
+#mauro-friends-wrapper{
+    background-color: #ff7600;
 }
 
 #voice-actor-wrapper{
     background-color: black;
-    height: 25vw;
+    color: white;
 }
 
-#voice-actor-wrapper p, #voice-actor-wrapper h1{
-    color: white;
+.left-content-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.content-wrapper{
+    word-wrap: break-word; 
+    width: 50%; 
+    padding-top: 60px;
+}
+
+.content-img-wrapper{
+    width: 600px;
+    height: 300px;
+}
+
+.content-img-wrapper > img{
+    width: inherit;
+    height: inherit;
 }
