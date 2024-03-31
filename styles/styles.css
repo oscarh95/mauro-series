@@ -36,6 +36,10 @@ nav{
     width: inherit;
 }
 
+.section-no-margins{
+    margin: 0;
+}
+
 #intro-wrapper{
     display: flex;
     justify-content: center;
@@ -44,8 +48,7 @@ nav{
     background-image: url("../assets/mauropowerstance.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35vw;
-    margin-top: 0;
+    height: 45vw;
 }
 
 #intro-wrapper > p, #intro-wrapper > h1  {
@@ -63,7 +66,6 @@ a{
 
 section{
     box-sizing: border-box;
-    border: 1px solid black;
     text-align: center;
     margin: auto;
     margin-top: 20px;
@@ -90,3 +92,21 @@ section{
     padding: 5px;
 }
 
+#series-wrapper{
+    background-color: #ff7600;
+    height: 25vw;
+}
+
+#mauro-friends-wrapper{
+    background-color: white;
+    height: 25vw;
+}
+
+#voice-actor-wrapper{
+    background-color: black;
+    height: 25vw;
+}
+
+#voice-actor-wrapper{
+    color: white;
+}
