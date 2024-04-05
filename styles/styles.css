@@ -1,3 +1,8 @@
+:root{
+    --color: #ff7600;
+    --font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 html{
     font-size: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -14,7 +19,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 18px 50px;
-    background-color: #ff7600;
+    background-color: var(--color);
     box-shadow: 0 3px 5px #393F4880;
 }
 
@@ -23,6 +28,11 @@ nav{
     justify-content: space-evenly;
     width: 30%;
     margin-top: 10px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 #logo-wrapper{
@@ -37,22 +47,6 @@ nav{
 
 .section-no-margins{
     margin: 0;
-}
-
-#intro-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url("../assets/mauropowerstance.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 45vw;
-}
-
-#intro-wrapper > p, #intro-wrapper > h1  {
-    color: #ff7600;
-    -webkit-text-stroke: 1.2px black;
 }
 
 a{
@@ -73,64 +67,43 @@ section{
     
 }
 
-.title-wrapper{
-    margin-bottom: 10px;
+#dropdown{
+    padding: 8px 16px;
 }
 
-.title-wrapper h1, p{
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-.title-wrapper p{
+#dropdown-btn{
+    background: none;
+    border: none;
+    padding: 0;
     font-weight: bold;
+    max-height: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: var(--font-family);
 }
 
-.redirect{
-    margin-top: 10px;
-    padding: 5px;
-}
-
-.section-height{
-    height: 25vw;
-}
-
-#series-wrapper{
+.dropdown-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(0.5rem);
     background-color: white;
+    border: 2.5px solid black;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
 }
 
-#mauro-friends-wrapper{
+.dropdown-content > a{
+    padding: 0.5rem 1rem 0.5rem 0.3rem;
+}
+
+.dropdown-content > a:hover{
     background-color: #ff7600;
 }
 
-#voice-actor-wrapper{
-    background-color: black;
-    color: white;
-}
-
-.left-content-wrapper{
-    display: flex;
-    justify-content: space-between;
-}
-
-.right-content-wrapper{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-}
-
-.content-wrapper{
-    word-wrap: break-word; 
-    width: 50%; 
-    padding-top: 60px;
-}
-
-.content-img-wrapper{
-    width: 600px;
-    height: 300px;
-}
-
-.content-img-wrapper > img{
-    width: inherit;
-    height: inherit;
+.show{
+    transform: translateY(0rem);
+    visibility: visible;
+    opacity: 1;
 }

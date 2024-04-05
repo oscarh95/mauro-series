@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" translate="no" class="notranslate">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Joe Mauro Series</title>
         <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/index.css">
     </head>
     <body>
         <header>
@@ -13,7 +14,14 @@
             </div>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="series.html">Seasons</a>
+                <div id="dropdown">
+                    <button id="dropdown-btn">Series</button>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <a href="series.html">Season 1</a>
+                        <a href="series.html">Season 2</a>
+                        <a href="series.html">Season 3</a>
+                    </div>
+                </div>
                 <a href="characters.html">Characters</a>
                 <a href="voiceactors.html">Voice Actors</a>
                 <a href="about.html">About</a>
@@ -71,10 +79,12 @@
                         </button>
                     </div>
                     <div class="content-img-wrapper">
-                        <img src="assets/powerup.png" alt="Placeholder">
+                        <img src="assets/voice_actor.png" alt="Placeholder">
                     </div>
                 </div>
             </section>
         </div>
+
+        <script src="./scripts/main.js"></script>
     </body>
 </html>
