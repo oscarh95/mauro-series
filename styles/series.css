@@ -35,3 +35,8 @@ ul{
 .playlist > li{
     margin: 1em 0;
 }
+
+.thumbnail{
+    width: 640px;
+    height: 390px;
+}
