@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Joe Mauro Series</title>
         <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/series.css">
     </head>
     <body>
         <div id="container">
@@ -15,22 +16,48 @@
                 <nav>
                     <a href="index.html">Home</a>
                     <div id="dropdown">
-                        <button id="dropdown-btn">Series</button>
-                        <div class="dropdown-content" id="dropdown-content">
-                            <a href="series.html">Season 1</a>
-                            <a href="series.html">Season 2</a>
-                            <a href="series.html">Season 3</a>
-                        </div>
+                        <a href="series.html" id="dropdown-btn">Series</a>
+                        <ul class="dropdown-content" id="dropdown-content">
+                            <li><a href="series.html#season1">Season 1</a></li>
+                            <li><a href="series.html#season2">Season 2</a></li>
+                            <li><a href="series.html#season3">Season 3</a></li> 
+                        </ul>
                     </div>
                     <a href="characters.html">Characters</a>
                     <a href="voiceactors.html">Voice Actors</a>
                     <a href="about.html">About</a>
                 </nav>
-            </header>
-
-            <section>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste iure obcaecati laudantium consequuntur sint expedita quasi culpa necessitatibus, quod placeat ad aspernatur! Quam ipsum velit pariatur, aperiam maiores distinctio error.
-            </section>
+            </header>  
+            <div id="content-wrapper">
+                <section>
+                    <div>
+                        <h1>The Series</h1>
+                    </div>
+                </section>
+                <section class="season-section" id="season1">
+                    <div class="season-number">
+                        <h2>Season 1</h2>
+                    </div>
+                    <div>
+                        <ul class="playlist">
+                            <li>Episode 1</li>
+                            <li>Episode 1</li>
+                            <li>Episode 1</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="season-section" id="season2">
+                    <div class="season-number">
+                        <h2>Season 2</h2>
+                    </div>
+                </section>
+                <section class="season-section" id="season3">
+                    <div class="season-number">
+                        <h2>Season 3</h2>
+                    </div>
+                    
+                </section>
+            </div>
         </div>
         <script src="./scripts/main.js"></script>
     </body>

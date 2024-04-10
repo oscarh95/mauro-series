@@ -1,17 +1,18 @@
 const dropdownBtn = document.getElementById("dropdown-btn")
-const dropdownMenu = document.getElementById("dropdown-content")
+const dropdownContent = document.getElementById("dropdown-content")
+const dropdownContainer = document.getElementById("dropdown")
 
 const toggleDropdown = () => {
-    dropdownMenu.classList.toggle("show");
+    dropdownContent.classList.toggle("show");
 }
 
-dropdownBtn.addEventListener("click", (e) => {
+dropdownBtn.addEventListener("mouseover", (e) => {
     e.stopPropagation();
     toggleDropdown();
 })
 
-document.documentElement.addEventListener("click", (e) => {
-    if(dropdownMenu.classList.contains("show")){
+dropdownContainer.addEventListener("mouseleave", (e) => {
+    if(dropdownContent.classList.contains("show")){
         toggleDropdown();
     }
 })

@@ -8,7 +8,7 @@
     background-image: url("../assets/mauropowerstance.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vw;
+    height: 46vw;
 }
 
 #intro-wrapper > p, #intro-wrapper > h1  {
@@ -36,6 +36,11 @@
 
 .section-height{
     height: 25vw;
+}
+
+.all-sections{
+    margin: 0;
+    padding: 120px 100px;
 }
 
 #series-wrapper{
