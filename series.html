@@ -8,26 +8,26 @@
         <link rel="stylesheet" href="./styles/series.css">
     </head>
     <body>
-        <div id="container">
-            <header>
-                <div id="logo-wrapper">
-                    <a href="index.html"><img id="logo" src="assets/maurowut.png" alt="Joe Mauro Series Logo"></a>
+        <header class="nav-down">
+            <div id="logo-wrapper">
+                <a href="index.html"><img id="logo" src="assets/maurowut.png" alt="Joe Mauro Series Logo"></a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <div id="dropdown">
+                    <a href="series.html" id="dropdown-btn">Series</a>
+                    <ul class="dropdown-content" id="dropdown-content">
+                        <li><a href="series.html#season1">Season 1</a></li>
+                        <li><a href="series.html#season2">Season 2</a></li>
+                        <li><a href="series.html#season3">Season 3</a></li> 
+                    </ul>
                 </div>
-                <nav>
-                    <a href="index.html">Home</a>
-                    <div id="dropdown">
-                        <a href="series.html" id="dropdown-btn">Series</a>
-                        <ul class="dropdown-content" id="dropdown-content">
-                            <li><a href="series.html#season1">Season 1</a></li>
-                            <li><a href="series.html#season2">Season 2</a></li>
-                            <li><a href="series.html#season3">Season 3</a></li> 
-                        </ul>
-                    </div>
-                    <a href="characters.html">Characters</a>
-                    <a href="voiceactors.html">Voice Actors</a>
-                    <a href="about.html">About</a>
-                </nav>
-            </header>  
+                <a href="characters.html">Characters</a>
+                <a href="voiceactors.html">Voice Actors</a>
+                <a href="about.html">About</a>
+            </nav>
+        </header>  
+        <div id="wrapper"> 
             <div id="content-wrapper">
                 <section>
                     <div>
@@ -35,75 +35,115 @@
                     </div>
                 </section>
                 <section class="season-section" id="season1">
-                    <div class="season-number">
+                    <div class="season-number season-collapse">
                         <h2>Season 1</h2>
                     </div>
-                    <div>
+                    <div class="content-collapse">
                         <ul class="playlist">
                             <li>
-                                <div class="thumbnail">
-                                    <img src="./assets/thumbnails/thumbnails1e1.png"/>
-                                </div>
-                                <div id="player"></div>
+                                <div class="player-wrapper">
+                                    <div class="visibility">
+                                        <div id="player" class="player"></div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="./assets/thumbnails/thumbnails1e1.png"/>
+                                    </div>
+                                </div>      
                             </li>
                             <li>
-                                <div class="thumbnail">
-                                    <img src="./assets/thumbnails/thumbnails1e2.png"/>
+                                <div class="player-wrapper">
+                                    <div class="visibility">
+                                        <div id="player2" class="player"></div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="./assets/thumbnails/thumbnails1e2.png"/>
+                                    </div>
                                 </div>
-                                <div id="player2"></div>
                             </li>
                             <li>
-                                <div class="thumbnail">
-                                    <img src="./assets/thumbnails/thumbnails1e3.png"/>
+                                <div class="player-wrapper">
+                                    <div class="visibility">
+                                        <div id="player3" class="player"></div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="./assets/thumbnails/thumbnails1e3.png"/>
+                                    </div>
                                 </div>
-                                <div id="player3"></div>
                             </li>
                             <li>
-                                <div class="thumbnail">
-                                    <img src="./assets/thumbnails/thumbnails1e4.png"/>
-                                </div>
-                                <div id="player4"></div>
+                                <div class="player-wrapper">
+                                    <div class="visibility">
+                                        <div id="player4" class="player"></div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="./assets/thumbnails/thumbnails1e4.png"/>
+                                    </div>
+                                </div>                              
                             </li>
                             <li>
-                                <div class="thumbnail">
-                                    <img src="./assets/thumbnails/thumbnails1e5.png"/>
-                                </div>
-                                <div id="player5"></div>
+                                <div class="player-wrapper">
+                                    <div class="visibility">
+                                        <div id="player5" class="player"></div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="./assets/thumbnails/thumbnails1e5.png"/>
+                                    </div>
+                                </div>                           
                             </li>
                             <li>
-                                <div class="thumbnail">
-                                    <img src="./assets/thumbnails/thumbnails1e6.png"/>
-                                </div>
-                                <div id="player6"></div>
+                                <div class="player-wrapper">
+                                    <div class="visibility">
+                                        <div id="player6" class="player"></div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="./assets/thumbnails/thumbnails1e6.png"/>
+                                    </div>
+                                </div>                             
                             </li>
                             <li>
-                                <div class="thumbnail">
-                                    <img src="./assets/thumbnails/thumbnails1e7.png"/>
+                                <div class="player-wrapper">
+                                    <div class="visibility">
+                                        <div id="player7" class="player"></div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="./assets/thumbnails/thumbnails1e7.png"/>
+                                    </div>
                                 </div>
-                                <div id="player7"></div>
                             </li>
                             <li>
-                                <div class="thumbnail">
-                                    <img src="./assets/thumbnails/thumbnails1e8.png"/>
+                                <div class="player-wrapper">
+                                    <div class="visibility">
+                                        <div id="player8" class="player"></div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="./assets/thumbnails/thumbnails1e8.png"/>
+                                    </div>
                                 </div>
-                                <div id="player8"></div>
                             </li>
                         </ul>
                     </div>
                 </section>
+                
                 <section class="season-section" id="season2">
-                    <div class="season-number">
+                    <div class="season-number season-collapse">
                         <h2>Season 2</h2>
                     </div>
                 </section>
+
                 <section class="season-section" id="season3">
-                    <div class="season-number">
+                    <div class="season-number season-collapse">
                         <h2>Season 3</h2>
                     </div>
-                    
+                </section>
+
+                <section class="season-section" id="season4">
+                    <div class="season-number season-collapse">
+                        <h2>Season 4</h2>
+                    </div>
                 </section>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="./scripts/main.js"></script>
         <script src="./scripts/series.js"></script>
     </body>

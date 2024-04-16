@@ -2,6 +2,8 @@
 
 #content-wrapper{
     padding: 1em 15em;
+    background-clip: content-box;
+    background-color: #fdf5f5;
 }
 
 section{
@@ -12,17 +14,46 @@ ul{
     list-style-type: none;
 }
 
+.season-section{
+    margin-bottom: 10px;
+}
+
 .season-number{
-    padding: 0 10px;
+    position: relative;
+    padding: 18px 10px;
     text-align: left;
     border-bottom: 1px solid black;
     -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+    text-align: justify;
 }
 
-.season-section{
-    margin-bottom: 10px;
+.season-number h2{
+    margin: auto;
+}
+
+.season-collapse:hover, .active{
+    cursor: pointer;
+    background-color: var(--color);
+}
+
+.season-collapse:after{
+    content: '\02795';
+    position: absolute;
+    bottom: 1.2rem;
+    right: 1rem;
+    color: white;
+}
+
+.active:after{
+    content: "\2796";
+}
+
+.content-collapse{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease-in-out;
 }
 
 .playlist{
@@ -40,3 +71,27 @@ ul{
     width: 640px;
     height: 390px;
 }
+
+.thumbnail > img{
+    width: inherit;
+    height: inherit;
+}
+
+.visibility{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.visibility-show{
+    visibility: visible;
+    opacity: 1;
+}
+
+.player-wrapper{
+    display: grid;
+}
+
+.visibility, .thumbnail{
+    grid-area: 1/1;
+}
+

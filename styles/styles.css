@@ -16,11 +16,16 @@ body{
 }
 
 header{
+    box-sizing: border-box;
+    position: fixed;
     display: flex;
     justify-content: space-between;
+    width: 100%;
     padding: 18px 50px;
     background-color: var(--color);
     box-shadow: 0 3px 5px #393F4880;
+    transition: top 0.2s ease-in-out;
+    top: 0;
 }
 
 nav{
@@ -81,6 +86,14 @@ section{
     font-size: 16px;
     cursor: pointer;
     font-family: var(--font-family);
+}
+
+#wrapper{
+    padding-top: 93px;
+}
+
+.nav-up{
+    top: -93px
 }
 
 .dropdown-content{
