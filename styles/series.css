@@ -14,6 +14,13 @@ ul{
     list-style-type: none;
 }
 
+
+br{
+    display: block;
+    content: "";
+    margin-top: 5px;
+}
+
 .season-section{
     margin-bottom: 10px;
 }
@@ -43,7 +50,6 @@ ul{
     position: absolute;
     bottom: 1.2rem;
     right: 1rem;
-    color: white;
 }
 
 .active:after{
@@ -61,10 +67,16 @@ ul{
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
+    padding: 0;
 }
 
 .playlist > li{
-    margin: 1em 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 15px;
+    border-bottom: 1.5px solid black;
+    padding: 1rem 0;
 }
 
 .thumbnail{
@@ -95,3 +107,8 @@ ul{
     grid-area: 1/1;
 }
 
+.video-blurb{
+    padding-top: 6.5rem;
+    width: 40%;
+    word-wrap: break-word;
+}
