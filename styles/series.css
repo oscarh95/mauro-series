@@ -1,7 +1,7 @@
 @import "./styles.css";
 
 #content-wrapper{
-    padding: 1em 15em;
+    padding: 2.5em 15em;
     background-clip: content-box;
     background-color: #fdf5f5;
 }

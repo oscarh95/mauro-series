@@ -1,0 +1,45 @@
+@import './styles.css';
+
+#grid-wrapper{
+    padding: 2.5em 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #fdf5f5;
+}
+
+.title{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid black;
+}
+
+.cast{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.cast-desc{
+    width: 80%;
+    text-align: center;
+}
+
+.cast-desc > h3{
+    margin: 0.8em 0;
+}
+
+.cast-desc > p{
+    margin: 0;
+}
+
+.cast-pfp{
+    width: 380px;
+    height: 280px;
+}
+
+.cast-pfp > img{
+    width: inherit;
+    height: inherit;
+}
