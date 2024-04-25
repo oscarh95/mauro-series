@@ -1,5 +1,11 @@
 @import './styles.css';
 
+br{
+    display: block;
+    content: "";
+    margin-top: 3px;
+}
+
 #grid-wrapper{
     padding: 2.5em 0;
     display: grid;
@@ -22,7 +28,7 @@
 }
 
 .cast-desc{
-    width: 80%;
+    width: 70%;
     text-align: center;
 }
 
@@ -34,8 +40,14 @@
     margin: 0;
 }
 
+.cast-desc > p > a{
+    padding: 0 0 0 2px;
+    color: red;
+}
+
+
 .cast-pfp{
-    width: 380px;
+    width: 350px;
     height: 280px;
 }
 

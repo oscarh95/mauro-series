@@ -28,6 +28,7 @@ header{
     top: 0;
 }
 
+
 nav{
     display: flex;
     justify-content: space-evenly;
@@ -70,7 +71,20 @@ section{
     box-sizing: border-box;
     text-align: center;
     margin: auto;
-    
+}
+
+footer{
+    box-sizing: border-box;
+    margin-top: 0;
+    width: 100%;
+    padding: 18px 50px;
+    background-color: var(--color);
+    text-align: center;
+}
+
+footer > p{
+    margin: 5px 0;
+    font-weight: bold;
 }
 
 #dropdown{
@@ -90,6 +104,7 @@ section{
 
 #wrapper{
     padding-top: 93px;
+    min-height: calc(100vh - 100px)
 }
 
 .nav-up{
