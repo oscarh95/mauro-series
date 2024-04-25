@@ -1,1 +1,1 @@
-Work in progress site for the Mauro Series
+Website for the Joe Mauro Series for Wolfman8541
