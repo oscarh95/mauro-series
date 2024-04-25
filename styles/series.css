@@ -96,13 +96,13 @@ br{
 .visibility-show{
     visibility: visible;
     opacity: 1;
-    animation-name: fadeInOpacity;
+    animation-name: fadeIn;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 1.5s;
 }
 
-@keyframes fadeInOpacity {
+@keyframes fadeIn{
 	0% {
 		opacity: 0;
 	}
