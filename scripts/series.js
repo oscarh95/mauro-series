@@ -92,6 +92,7 @@ onYouTubeIframeAPIReady = () => {
 
 
 //Collapsible sections
+
 for(let i = 0; i < collapsibleCollection.length; i++){
     collapsibleCollection[i].addEventListener('click', () => {
         collapsibleCollection[i].classList.toggle('active')
